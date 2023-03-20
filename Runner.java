@@ -23,21 +23,24 @@ public class Runner {
         PhotoPost p = new PhotoPost(picName, fileName, caption);
 
         NewsFeed news = new NewsFeed();
-        Post post = new Post(name);
-        post.addComment(text);
-        news.addPost(mes1);
+//        Post post = new Post(name);
+//        mes1.addComment(text);
+//        news.addPost(mes1);
+//        mes1.getText();
+        mes1.addComment(text);
         mes1.getText();
 
-        Post post2 = new Post(name2);
-        post2.addComment(text2);
+//        Post post2 = new Post(name2);
+        mes2.addComment(text2);
         news.addPost(mes2);
-        news.show();
         mes2.getText();
 
-        p.getCaption();
-        p.getImageFile();
 
-        post.display();
+        mes1.display();
+        mes2.display();
+        p.display();
+        System.out.println(p.getCaption());
+        System.out.println(p.getImageFile());
 
 
     }
